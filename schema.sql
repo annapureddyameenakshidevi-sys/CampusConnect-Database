@@ -22,4 +22,10 @@ CREATE TABLE Enrollments (
     FOREIGN KEY (course_id) REFERENCES Courses(course_id)
 );
 
+CREATE INDEX idx_student_department
+ON Students(department);
+
+CREATE INDEX idx_enrollment_student_course
+ON Enrollments(student_id, course_id);
+
 
