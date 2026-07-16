@@ -7,4 +7,10 @@ CREATE TABLE Students (
     department TEXT NOT NULL
 );
 
+CREATE TABLE Courses (
+    course_id INTEGER PRIMARY KEY,
+    course_name TEXT NOT NULL,
+    credits INTEGER NOT NULL
+);
+
 
