@@ -13,4 +13,13 @@ CREATE TABLE Courses (
     credits INTEGER NOT NULL
 );
 
+CREATE TABLE Enrollments (
+    enrollment_id INTEGER PRIMARY KEY,
+    student_id INTEGER NOT NULL,
+    course_id INTEGER NOT NULL,
+    semester TEXT NOT NULL,
+    FOREIGN KEY (student_id) REFERENCES Students(student_id),
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+
 
