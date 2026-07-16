@@ -67,3 +67,17 @@ ROW_NUMBER() OVER (ORDER BY student_name) AS Row_Num,
 student_name,
 department
 FROM Students;
+
+-- Transaction Example
+
+BEGIN TRANSACTION;
+
+UPDATE Courses
+SET credits = credits + 1
+WHERE course_id = 101;
+
+UPDATE Students
+SET department='CSE'
+WHERE student_id=1;
+
+COMMIT;
