@@ -21,3 +21,15 @@ INSERT INTO Courses (course_id, course_name, credits) VALUES
 (108, 'Cloud Computing', 3),
 (109, 'Cyber Security', 4),
 (110, 'Artificial Intelligence', 4);
+
+INSERT INTO Enrollments (enrollment_id, student_id, course_id, semester) VALUES
+(1, 1, 101, 'Semester 1'),
+(2, 2, 102, 'Semester 1'),
+(3, 3, 103, 'Semester 1'),
+(4, 4, 104, 'Semester 2'),
+(5, 5, 105, 'Semester 2'),
+(6, 6, 106, 'Semester 2'),
+(7, 7, 107, 'Semester 3'),
+(8, 8, 108, 'Semester 3'),
+(9, 9, 109, 'Semester 4'),
+(10, 10, 110, 'Semester 4');
